@@ -1,0 +1,7 @@
+name: mgltools
+
+channels:
+  - bioconda
+
+dependencies:
+  - mgltools

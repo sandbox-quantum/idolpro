@@ -1,0 +1,6 @@
+torchani
+meeko==0.5.1
+e3nn
+wandb
+lmdb
+orjson

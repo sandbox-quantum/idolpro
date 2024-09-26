@@ -1,0 +1,31 @@
+name: idolpro
+
+channels:
+  - conda-forge
+  - nvidia
+  - pytorch
+  - pyg
+
+dependencies:
+  - python=3.10
+  - pip=23.3.1
+  - pytorch::pytorch-cuda=12.1
+  - pytorch::pytorch
+  - pyg::pyg
+  - pyg::pytorch-scatter
+  - pyg::pytorch-cluster
+  - pyg::pytorch-sparse
+  - lightning
+  - numpy
+  - pytest
+  - rdkit=2023.09.3
+  - biopython=1.81
+  - ipykernel
+  - ase
+  - pymatgen
+  - openbabel
+  - imageio
+  - pymol-open-source
+  - mdanalysis
+  - pip:
+    - -r requirements.txt
