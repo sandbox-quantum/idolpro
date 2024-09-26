@@ -1,0 +1,7 @@
+torchani
+meeko==0.5.1
+fair-esm[esmfold]
+e3nn
+wandb
+lmdb
+orjson
