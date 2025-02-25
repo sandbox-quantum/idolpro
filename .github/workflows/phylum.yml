@@ -1,0 +1,25 @@
+name: Phylum_idolpro-ext_analyze
+on:
+  pull_request:
+    branches:
+      - 'main'
+      - 'phylum_integration'
+jobs:
+  analyze_deps:
+    name: Analyze dependencies with Phylum
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    container:
+      image: docker://ghcr.io/phylum-dev/phylum-ci:latest
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+        PHYLUM_API_KEY: ${{ secrets.PHYLUM_TOKEN }}
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Analyze dependencies
+        run: phylum-ci -vv --project idolpro-ext --group sandbox-alg --org sandbox-aisim
