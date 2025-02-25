@@ -22,4 +22,4 @@ jobs:
         with:
           fetch-depth: 0
       - name: Analyze dependencies
-        run: phylum-ci -vv --project idolpro-ext --group sandbox-alg --org sandbox-aisim -e requirements.txt
+        run: phylum-ci -vv --project idolpro-ext --group sandbox-alg --org sandbox-aisim 
