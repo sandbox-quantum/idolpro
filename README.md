@@ -18,7 +18,7 @@ micromamba activate idolpro
 ```
 Set `PYTHONPATH` such that all project repos are visible:
 ```
-export PYTHONPATH=$PYTHONPATH:${PWD}:${PWD}/DiffSBDD
+export PYTHONPATH=$PYTHONPATH:${PWD}:${PWD}/DiffSBDD:${PWD}/ocp
 ```
 
 ## Preparing input files
